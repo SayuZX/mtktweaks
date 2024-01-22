@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ZTweaks</title>
+        <link rel="stylesheet" href="file/style.css">
+        <meta content="MTKTweaks | Utility" property="og:title"/>
+        <meta content="..." property="og:description"/>
+        <meta content="#a569ff" data-react-helmet="true" name="theme-color"/>
+        <script>
+// Disable right-click
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+function ctrlShiftKey(e, keyCode) {
+  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
+
+document.onkeydown = (e) => {
+  // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+  if (
+    event.keyCode === 123 ||
+    ctrlShiftKey(e, 'I') ||
+    ctrlShiftKey(e, 'J') ||
+    ctrlShiftKey(e, 'C') ||
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+  )
+    return false;
+};
+        </script>
+    </head>
+    <div id="particles-js"></div>
+        <script src="script/title.js"></script>
+        <script src="script/particles.js"></script>
+        <script src="script/app.js"></script>
+        <body>
+            <div class="container_main" style="top:50%">
+                <div class="panel panel_terms">
+                    <a class="header accent">MTKTweaks - return soon.</a>
+                </br>
+                <br>
+                    <a class="bold">Telegram - </a>
+                    <a href="https://t.me/mtkperf" target="_blank">Stay up-to-date with us!</a>
+                <br>
+                <br>
+                <a class="bold">Download latest version - </a>
+                <a href="https://github.com/SayuZX/MTKPERF_HostUpdate/releases" target="_blank">github releases.</a>
+            </div>
+        </body>
+</html>
